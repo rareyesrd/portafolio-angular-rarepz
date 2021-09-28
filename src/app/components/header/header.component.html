@@ -1,0 +1,74 @@
+<div class="tm-header-mobile uk-hidden@m" uk-sticky>
+  <div class="uk-navbar-container">
+    <nav uk-navbar="container: .tm-header-mobile" class="uk-navbar">
+      <div class="uk-navbar-left">
+        <a class="uk-navbar-toggle" href="#tm-mobile" uk-toggle="" aria-expanded="false">
+          <div uk-navbar-toggle-icon="" class="uk-icon uk-navbar-toggle-icon"><svg width="20" height="20"
+              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <rect y="9" width="20" height="2"></rect>
+              <rect y="3" width="20" height="2"></rect>
+              <rect y="15" width="20" height="2"></rect>
+            </svg>
+          </div>
+        </a>
+      </div>
+      <div class="uk-navbar-center">
+        <a routerLink="/" class="uk-navbar-item uk-logo">
+          <img alt="Rarepz logo" src="./assets/images/rarepz.png" width="100px"></a>
+      </div>
+    </nav>
+  </div>
+  <div id="tm-mobile" uk-offcanvas="" mode="push" overlay="" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar">
+      <button class="uk-offcanvas-close uk-icon uk-close" type="button" uk-close="">
+        <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+        </svg>
+      </button>
+      <div class="uk-child-width-1-1 uk-grid uk-grid-stack" uk-grid="">
+        <div>
+          <div class="uk-panel" id="module-menu-mobile">
+            <ul class="uk-nav uk-nav-default">
+              <li class="item-navegation"><a href="#about"> About me</a></li>
+              <li class="item-navegation"><a href="#experience"> Experience</a></li>
+              <li class="item-navegation"><a routerLink="tech"> Skills and knowledge</a></li>
+              <li class="item-navegation"><a routerLink="portafolio"> Projects</a></li>
+              <li class="item-navegation"><a href="https://github.com/rareyesrd" target="_blank" rel="noopener">
+                  GitHub</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="tm-header uk-visible@m tm-header-overlay" uk-header="" uk-sticky
+  [ngStyle]="{'backdrop-filter':'blur(23px)'}">
+  <div uk-sticky="" media="@m" show-on-up="" animation="uk-animation-slide-top" cls-active="uk-navbar-sticky"
+    sel-target=".uk-navbar-container" class="uk-sticky">
+    <div class="uk-navbar-container uk-navbar-primary uk-navbar-transparent uk-dark">
+      <div class="uk-container uk-container-expand">
+        <nav class="uk-navbar"
+          uk-navbar="{&quot;align&quot;:&quot;left&quot;,&quot;boundary&quot;:&quot;.tm-header .uk-navbar-container&quot;,&quot;container&quot;:&quot;.tm-header > [uk-sticky]&quot;}">
+          <div class="uk-navbar-left">
+            <a routerLink="/" class="uk-navbar-item uk-logo">
+              <img alt="Rarepz logo" src="./assets/images/rarepz.png" width="100px"></a>
+          </div>
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-flex">
+              <li class="item-navegation"><a href="#about"> About me</a></li>
+              <li class="item-navegation"><a href="#experience"> Experience</a></li>
+              <li class="item-navegation"><a routerLink="tech"> Skills and knowledge</a></li>
+              <li class="item-navegation"><a routerLink="portafolio"> Projects</a></li>
+              <li class="item-navegation"><a href="https://github.com/rareyesrd" target="_blank" rel="noopener">
+                  GitHub</a>
+              </li>
+            </ul>
+          </div>
+
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>

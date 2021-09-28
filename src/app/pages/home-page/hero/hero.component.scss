@@ -1,0 +1,38 @@
+.letters {
+  position: relative;
+  width: 85%;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.letters h1 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 900;
+  text-align: right;
+  font-size: 200px;
+  color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #7574793b;
+}
+.letters .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  width: 700px;
+}
+.letters .content p {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 50px;
+  letter-spacing: 0.5px;
+}
+.content p span {
+  color: #834ef5;
+  padding: 10px;
+}

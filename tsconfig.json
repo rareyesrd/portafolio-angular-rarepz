@@ -18,8 +18,12 @@
     "module": "es2020",
     "lib": [
       "es2018",
-      "dom"
-    ]
+      "dom",
+    ],
+    "paths": {
+      "@portafolio-page": ["./src/app/pages/portafolio-page"],
+      "@home-page": ["./src/app/pages/home-page"],
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
