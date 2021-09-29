@@ -1,31 +1,101 @@
-.uk-timeline .uk-timeline-item .uk-card {
-  max-height: 300px;
+.uk-timeline-right {
+  .uk-timeline-item {
+    display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+    border-right: 1px solid #b9b7bd;
+    &:before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      background-color: #432682;
+      border-radius: 10px;
+      width: 12px;
+      height: 12px;
+      top: 50%;
+      right: 0px;
+      border: 2px solid #432682;
+      z-index: 2;
+      transform: translateY(-45%);
+    }
+    &::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      background-color: #432682;
+      border-radius: 10px;
+      width: 46px;
+      height: 2px;
+      top: 50%;
+      right: 0px;
+      z-index: 1;
+    }
+    .uk-card {
+      max-height: 270px;
+      border-right: 2px solid #432682;
+    }
+
+    .uk-timeline-content {
+      flex: auto 1 1;
+      padding: 0 3rem 0 0;
+    }
+  }
 }
 
-.uk-timeline .uk-timeline-item {
-  display: flex;
-  position: relative;
+.uk-timeline-left {
+  .uk-timeline-item {
+    display: flex;
+    position: relative;
+    border-left: 1px solid #b9b7bd;
+    &:before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      background-color: #432682;
+      border-radius: 10px;
+      width: 12px;
+      height: 12px;
+      top: 50%;
+      left: 0px;
+      border: 2px solid #432682;
+      z-index: 2;
+      transform: translateY(-45%);
+    }
+    &::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      background-color: #432682;
+      border-radius: 10px;
+      width: 46px;
+      height: 2px;
+      top: 50%;
+      left: 0px;
+      z-index: 1;
+    }
+    .uk-card {
+      max-height: 270px;
+      border-left: 2px solid #432682;
+    }
+
+    .uk-timeline-content {
+      flex: 1 1 auto;
+      padding: 0 0 0 3rem;
+    }
+  }
+}
+h2,
+h3 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 800;
 }
 
-.uk-timeline .uk-timeline-item::before {
-  background: #dadee4;
-  content: "";
-  height: 100%;
-  left: 19px;
-  position: absolute;
-  top: 20px;
-  width: 2px;
-  z-index: -1;
+p {
+  font-family: "Fira Code", monospace, sans-serif;
 }
-
-.uk-timeline .uk-timeline-item .uk-timeline-icon .uk-badge {
-  margin-top: 20px;
-  width: 40px;
-  height: 40px;
+.uk-label {
+  background-color: #432682;
 }
-
-.uk-timeline .uk-timeline-item .uk-timeline-content {
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  padding: 0 0 0 1rem;
+.working-place {
+  color: #432682;
 }

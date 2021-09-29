@@ -1,69 +1,48 @@
-<div class="uk-container uk-padding">
-  <h2 class="uk-text-center  uk-text-2xlg uk-text-bold">
+<div class="uk-container uk-padding uk-padding-remove-top" id="experience">
+  <h2 class="uk-text-centeruk-text-2xlg uk-text-bold uk-text-center uk-padding-large">
     My Experience
   </h2>
-  <div class="uk-timeline">
-    <div class="uk-timeline-item">
-      <div class="uk-timeline-icon">
-        <span class="uk-badge"><span uk-icon="check"></span></span>
-      </div>
-      <div class="uk-timeline-content">
-        <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
-          <div class="uk-card-header">
-            <div class="uk-grid-small uk-flex-middle" uk-grid>
-              <h3 class="uk-card-title"><time datetime="2020-07-08">Since August 2021</time></h3>
-              <span class="uk-label uk-label-success uk-margin-auto-left">Remote</span>
+
+  <div class="uk-flex uk-flex-between" [ngStyle]="{'gap':'10px'}">
+    <div class="uk-timeline-right uk-width-1-2">
+      <h3 class="uk-text-center uk-text-bold uk-padding-small">Professional</h3>
+      <div class="uk-timeline-item" *ngFor="let profession of profesionalExperience">
+        <div class="uk-timeline-content">
+          <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
+            <div class="uk-card-header">
+              <div class="uk-grid-small uk-flex-middle" uk-grid>
+                <h4 class="uk-card-title uk-text-bolder uk-text-default">{{ profession.time }}</h4>
+                <span class="uk-label uk-margin-auto-left">{{ profession.typeOfWork }}</span>
+              </div>
             </div>
-          </div>
-          <div class="uk-card-body">
-            <h3>UI User Interface Manager at Refactoring.do</h3>
-            <p class="uk-text-success">
-              Managing the design and development of web-
-              based technical solutions that engage users
-              and meet business requirements.
-            </p>
+            <div class="uk-card-body">
+              <h4 class="uk-text-bold">{{ profession.position }}<span
+                  class="uk-text-italic uk-margin-small-left working-place">{{ profession.place }}</span></h4>
+              <p class="uk-text-default">
+                {{ profession.description }}
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="uk-timeline-item">
-      <div class="uk-timeline-icon">
-        <span class="uk-badge"><span uk-icon="check"></span></span>
-      </div>
-      <div class="uk-timeline-content">
-        <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
-          <div class="uk-card-header">
-            <div class="uk-grid-small uk-flex-middle" uk-grid>
-              <h3 class="uk-card-title"><time datetime="2020-07-07">July 7</time></h3>
-              <span class="uk-label uk-label-warning uk-margin-auto-left">Test</span>
+
+    <div class="uk-timeline-left uk-width-1-2@m">
+      <h3 class="uk-text-center uk-text-bold uk-padding-small">Educational</h3>
+      <div class="uk-timeline-item" *ngFor="let educational of educationalExperience">
+        <div class="uk-timeline-content">
+          <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
+            <div class="uk-card-header">
+              <div class="uk-grid-small uk-flex-middle" uk-grid>
+                <h4 class="uk-card-title uk-text-bolder uk-text-default">{{ educational.time }}</h4>
+              </div>
             </div>
-          </div>
-          <div class="uk-card-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-            </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-            </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="uk-timeline-item">
-      <div class="uk-timeline-icon">
-        <span class="uk-badge"><span uk-icon="check"></span></span>
-      </div>
-      <div class="uk-timeline-content">
-        <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
-          <div class="uk-card-header">
-            <div class="uk-grid-small uk-flex-middle" uk-grid>
-              <h3 class="uk-card-title"><time datetime="2020-07-06">July 6</time></h3>
-              <span class="uk-label uk-label-danger uk-margin-auto-left">Fix</span>
+            <div class="uk-card-body">
+              <h4 class="uk-text-bold">{{ educational.title }}</h4>
+              <p class="uk-text-default">
+                {{ educational.place }}
+              </p>
             </div>
-          </div>
-          <div class="uk-card-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-            </p>
           </div>
         </div>
       </div>
