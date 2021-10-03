@@ -1,12 +1,11 @@
-<div class="uk-container uk-padding uk-padding-remove-top" id="experience">
+<section class="uk-container uk-padding uk-padding-remove-top" id="experience">
   <h2 class="uk-text-centeruk-text-2xlg uk-text-bold uk-text-center uk-padding-large">
     My Experience
   </h2>
-
-  <div class="uk-flex uk-flex-between" [ngStyle]="{'gap':'10px'}">
-    <div class="uk-timeline-right uk-width-1-2">
+  <div class="uk-flex uk-flex-between experience" [ngStyle]="{'gap':'10px'}">
+    <div class="uk-timeline-right uk-width-1-2@m">
       <h3 class="uk-text-center uk-text-bold uk-padding-small">Professional</h3>
-      <div class="uk-timeline-item" *ngFor="let profession of profesionalExperience">
+      <article class="uk-timeline-item" *ngFor="let profession of profesionalExperience">
         <div class="uk-timeline-content">
           <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
             <div class="uk-card-header">
@@ -24,12 +23,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </article>
     </div>
-
     <div class="uk-timeline-left uk-width-1-2@m">
       <h3 class="uk-text-center uk-text-bold uk-padding-small">Educational</h3>
-      <div class="uk-timeline-item" *ngFor="let educational of educationalExperience">
+      <article class="uk-timeline-item" *ngFor="let educational of educationalExperience">
         <div class="uk-timeline-content">
           <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
             <div class="uk-card-header">
@@ -45,7 +43,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </article>
     </div>
   </div>
-</div>
+</section>

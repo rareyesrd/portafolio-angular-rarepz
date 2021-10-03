@@ -1,0 +1,27 @@
+.ContributionCalendar-day,
+.ContributionCalendar-day[data-level="0"] {
+  fill: #ebedf0;
+  shape-rendering: geometricPrecision;
+  outline: 1px solid #1b1f230f;
+  outline-offset: -1px;
+}
+.ContributionCalendar-day,
+.ContributionCalendar-day[data-level="1"] {
+  fill: #9be9a8;
+  outline: 1px solid #1b1f230f;
+}
+.ContributionCalendar-day[data-level="2"] {
+  fill: #40c463;
+  outline: 1px solid #1b1f230f;
+}
+.ContributionCalendar-day[data-level="3"] {
+  fill: #30a14e;
+  outline: 1px solid #1b1f230f;
+}
+.ContributionCalendar-day[data-level="4"] {
+  fill: #216e39;
+  outline: 1px solid #1b1f230f;
+}
+.ContributionCalendar-label {
+  font-size: 10px;
+}

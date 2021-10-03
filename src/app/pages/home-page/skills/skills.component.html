@@ -1,1 +1,27 @@
-<p>skills works!</p>
+<h2 class="uk-text-centeruk-text-2xlg uk-text-bold uk-text-center uk-padding-large">
+  My Skills
+</h2>
+<section class="uk-container uk-padding-large uk-padding-remove-top" id="skills">
+  <div
+    class="uk-container uk-grid-small uk-child-width-1-3@s uk-child-width-1-4@m uk-text-center uk-flex-center uk-margin-auto"
+    uk-grid>
+    <div class="skill-card" *ngFor="let skill of skills">
+      <div class="percent">
+        <div class="uk-flex uk-align-center uk-flex-column">
+          <svg>
+            <circle cx="70" cy="70" r="70"></circle>
+            <circle cx="70" cy="70" r="70"
+              [ngStyle]="{'stroke-dashoffset': 'calc(440 - (400 * '+skill.percentage+') / 100)', 'stroke': skill.stroke}">
+            </circle>
+          </svg>
+          <div class="number">
+            <h2>{{ skill.percentage }} <span>%</span></h2>
+          </div>
+          <div class="technology">
+            <h3 class="uk-text-bold">{{ skill.technology }}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

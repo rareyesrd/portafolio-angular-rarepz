@@ -99,3 +99,9 @@ p {
 .working-place {
   color: #432682;
 }
+.experience {
+  flex-wrap: nowrap;
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+}

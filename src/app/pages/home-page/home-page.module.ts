@@ -1,20 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
-  HomePageComponent,
-  HeroComponent,
   ExperienceComponent,
+  HomePageComponent,
   SkillsComponent,
+  GithubComponent,
+  AboutComponent,
+  HeroComponent,
 } from '@home-page';
-import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
-    HomePageComponent,
-    HeroComponent,
     ExperienceComponent,
+    HomePageComponent,
     SkillsComponent,
+    GithubComponent,
     AboutComponent,
+    HeroComponent,
   ],
   imports: [CommonModule],
   exports: [HomePageComponent],
