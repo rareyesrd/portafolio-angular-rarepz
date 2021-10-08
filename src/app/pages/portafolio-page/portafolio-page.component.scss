@@ -1,0 +1,22 @@
+.uk-card-project {
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 5px #e1d8d8;
+  margin: 50px auto;
+}
+
+.button-expand-information {
+  cursor: pointer;
+  background: #2b1066;
+  border: none;
+  padding: 7px 10px;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+
+  &:hover {
+    background: #562cb1;
+    transition: all 0.5s ease;
+  }
+}
