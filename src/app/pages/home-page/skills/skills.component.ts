@@ -47,10 +47,11 @@ export class SkillsComponent implements OnInit {
       technology: 'Vue',
       stroke: '#58B380',
     },
-    // {
-    //   percentage: 45,
-    //   technology: 'Azure',
-    // },
+    {
+      percentage: 50,
+      technology: 'Firebse',
+      stroke: '#EFD82F',
+    },
     // {
     //   percentage: 45,
     //   technology: 'Azure',
