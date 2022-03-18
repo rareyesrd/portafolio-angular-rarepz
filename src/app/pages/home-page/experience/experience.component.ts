@@ -26,7 +26,7 @@ export class ExperienceComponent implements OnInit {
     },
 
     {
-      time: 'May 2019 – Jan 2021',
+      time: 'May 2019 – Jan 2019',
       position: 'Web designer,',
       place: 'Caribe Media Inc',
       typeOfWork: 'Presential',
